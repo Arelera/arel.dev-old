@@ -15,7 +15,6 @@ const nextConfig = {
   reactStrictMode: true,
   assetPrefix: assetPrefix,
   basePath: basePath,
-  image,
 }
 
 module.exports = nextConfig
