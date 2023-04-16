@@ -1,9 +1,9 @@
+import SpaceBackground from '@/components/SpaceBackground'
 import Head from 'next/head'
 
 type Props = {}
 
 export default function Home({}: Props) {
-  const a = ''
   return (
     <>
       <Head>
@@ -12,11 +12,21 @@ export default function Home({}: Props) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="flex items-center justify-center min-h-screen text-xl">
-        arel
-        <a className="text-blue-500" href="https://github.com/Arelera">
-          .dev
-        </a>
+
+      <div className="absolute inset-0">
+        <SpaceBackground />
+      </div>
+      <div className="absolute inset-x-0 z-10 top-1/3">
+        <div className="flex items-center justify-center">
+          <div className="bg-black bg-opacity-50 p-10 rounded-xl">
+            <h1 className="text-7xl font-thin">
+              arel
+              <a href="https://github.com/Arelera" className="text-blue-500">
+                .dev
+              </a>
+            </h1>
+          </div>
+        </div>
       </div>
     </>
   )

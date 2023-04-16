@@ -2,11 +2,11 @@ import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import { Poppins } from 'next/font/google'
 
-const michroma = Poppins({ weight: '400', subsets: ['latin'] })
+const poppins = Poppins({ weight: ['200', '400'], subsets: ['latin'] })
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={michroma.className}>
+    <main className={poppins.className}>
       <Component {...pageProps} />
     </main>
   )
