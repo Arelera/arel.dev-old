@@ -1,1 +1,1 @@
-# [arel.dev](arel.dev)
+# [arel.dev](https://arel.dev)
