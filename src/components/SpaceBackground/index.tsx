@@ -1,5 +1,4 @@
 import { ScaleLinear, scaleLinear } from 'd3-scale'
-import { Arsenal } from 'next/font/google'
 import { useEffect, useRef } from 'react'
 
 type Props = {}
