@@ -16,6 +16,8 @@ jobs:
       - name: Build
         run: |
           npm ci
+          touch .env.local
+          echo NEXT_PUBLIC_GA_KEY=${{ secrets.NEXT_PUBLIC_GA_KEY }} >> .env.local
           npm run build
           npm run export
           touch out/.nojekyll
