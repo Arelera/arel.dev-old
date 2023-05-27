@@ -13,7 +13,7 @@ jobs:
           version: 8.5.1
       - name: Generate package-lock.json
         run: |
-          cd arel.dev/arel.dev/
+          ls
           npm i --package-lock-only
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
