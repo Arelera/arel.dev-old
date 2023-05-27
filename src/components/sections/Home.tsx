@@ -8,11 +8,16 @@ type Props = {
 export default function HomeSection({ onClickNavItem }: Props) {
   return (
     <>
-      <div className="absolute inset-0 z-10 flex items-center justify-center text-center">
+      <div className="absolute inset-0 flex items-center justify-center text-center">
         <Card>
           <h1 className="mb-4 text-8xl">
             arel
-            <a href="https://github.com/Arelera" className="text-blue-500">
+            <a
+              href="https://github.com/Arelera"
+              className="text-blue-500"
+              target="_blank"
+              rel="noreferrer"
+            >
               .dev
             </a>
           </h1>
