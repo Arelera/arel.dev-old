@@ -11,10 +11,6 @@ jobs:
       - uses: pnpm/action-setup@v2
         with:
           version: 8.5.1
-      - name: Generate package-lock.json
-        run: |
-          ls
-          npm i --package-lock-only
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
