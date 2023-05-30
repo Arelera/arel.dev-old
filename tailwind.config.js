@@ -11,7 +11,7 @@ module.exports = {
           'padding-bottom': 'env(safe-area-inset-bottom)',
         },
         'pt-safe': {
-          'padding-bottom': 'env(safe-area-inset-top)',
+          'padding-top': 'env(safe-area-inset-top)',
         },
       })
     }),
