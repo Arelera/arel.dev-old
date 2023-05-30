@@ -10,8 +10,8 @@ export default function NavButton({ children, bottom, onClick }: Props) {
   return (
     <div
       className={clsx('absolute inset-x-0 flex justify-center', {
-        'bottom-8': bottom,
-        'top-8': !bottom,
+        'pb-safe bottom-8': bottom,
+        'pt-safe top-8': !bottom,
       })}
     >
       <button
