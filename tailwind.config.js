@@ -4,18 +4,7 @@ const plugin = require('tailwindcss/plugin')
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {},
-  plugins: [
-    plugin(({ addUtilities }) => {
-      addUtilities({
-        'pb-safe': {
-          'padding-bottom': 'env(safe-area-inset-bottom)',
-        },
-        'pt-safe': {
-          'padding-top': 'env(safe-area-inset-top)',
-        },
-      })
-    }),
-  ],
+  plugins: [],
 }
 
 // TODO: create a text-shadow plugin
